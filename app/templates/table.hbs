@@ -1,0 +1,10 @@
+{{#my-table}}{{/my-table}}
+<hr><br>
+
+<div class="col-8">
+  <div class="form-group">
+    <label>Generate random number</label>
+    {{input type="text" class="form-control" value=model.randomNumber}}
+  </div>
+  <button {{action 'generate'}} class="btn btn-primary">Generate</button>
+</div>

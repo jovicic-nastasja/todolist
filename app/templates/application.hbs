@@ -1,5 +1,23 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">ToDo List App</a>
 
-{{outlet}}
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            {{#link-to 'todos' class="nav-link"}}Home{{/link-to}}
+          </li>
+          <li class="nav-item active">
+            {{#link-to 'table' class="nav-link"}}Sortable Table{{/link-to}}
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{outlet}}
+        </div>
+      </div>
+
+    </main>

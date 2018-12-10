@@ -1,0 +1,13 @@
+<div class="col-12"><br>
+  <EmberTable as |t|>
+      <t.head
+        @columns={{columns}}
+        @sorts={{sorts}}
+
+        @onUpdateSorts={{action (mut sorts)}}
+
+        @widthConstraint='eq-container'
+        @fillMode='first-column'/>
+      <t.body @rows={{rows}} />
+    </EmberTable>
+</div>
