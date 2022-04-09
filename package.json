@@ -51,7 +51,7 @@
     "emberfire": "^2.0.10",
     "eslint-plugin-ember": "^5.2.0",
     "loader.js": "^4.7.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "qunit-dom": "^0.8.0"
   },
   "engines": {
